@@ -889,7 +889,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   darkModeToggle.addEventListener("click", () => {
     const isDark = document.documentElement.getAttribute("data-theme") === "dark";
-    localStorage.setItem("darkMode", !isDark);
+    localStorage.setItem("darkMode", String(!isDark));
     applyDarkMode(!isDark);
   });
 });
